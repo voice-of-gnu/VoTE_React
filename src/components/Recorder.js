@@ -35,16 +35,22 @@ const Recorder = () => {
 
 const styles = {
   container: {
-    textAlign: "center",
-    padding: "4px",
+    display: "flex",
+    flexDirection: "column",
+    justifyContent: "center",
+    alignItems: "center",
+    height: "200px",
+    minHeight: "200px",
+    maxHeight: "200px",
+    position: "relative",
     backgroundColor: "#F2E5BF",
+    boxSizing: "border-box",
   },
   button: {
-    width: "100px",
-    height: "100px",
+    width: "95px", // 크기를 적절히 줄임
+    height: "95px",
     cursor: "pointer",
     borderRadius: "50%",
-    display: "block",
     margin: "0 auto",
   },
   timer: {

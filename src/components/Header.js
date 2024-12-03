@@ -1,4 +1,7 @@
 import React, { useState } from "react";
+import { ReactComponent as SearchIcon } from './img/search.svg';
+import { ReactComponent as SettingsIcon } from './img/settings.svg';
+
 
 const Header = ({ onOpenModal }) => {
   const [isModalOpen, setIsModalOpen] = useState(false); // 슬라이딩 패널 상태 관리
@@ -36,8 +39,8 @@ const Header = ({ onOpenModal }) => {
           불러오기
         </button>
         <div style={styles.iconContainer}>
-          <span style={styles.icon}>🔍︎</span>
-          <span style={styles.icon}>⚙️</span>
+          <SearchIcon width="20" height="20"></SearchIcon>
+          <SettingsIcon width="20" height="20"></SettingsIcon>
         </div>
       </div>
 
@@ -105,7 +108,7 @@ const styles = {
     display: "flex",
     justifyContent: "space-between",
     alignItems: "center",
-    padding: "10px 20px",
+    padding: "12px 20px",
     backgroundColor: "white",
   },
   button: {
@@ -142,8 +145,8 @@ const styles = {
     right: 0,
     backgroundColor: "#FAF5E5",
     padding: "20px",
-    borderTopLeftRadius: "10px",
-    borderTopRightRadius: "10px",
+    borderTopLeftRadius: "15px",
+    borderTopRightRadius: "15px",
     height: "80vh",
   },
   panelContent: {
@@ -165,7 +168,7 @@ const styles = {
     marginBottom: "300px",
     backgroundColor: "#FAF5E5",
     padding: "10px",
-    borderRadius: "5px",
+    borderRadius: "15px",
 
     border: "0px solid #ddd",
     overflowY: "auto",

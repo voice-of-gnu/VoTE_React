@@ -13,8 +13,10 @@ function App() {
   return (
     <div style={styles.app}>
       <Header onOpenModal={handleOpenModal} />
-      <TextList />
-      <Recorder />
+      <div style={styles.mainContainer}>
+        <TextList style={styles.textList} />
+        <Recorder style={{ ...styles.recorder, flexShrink: 0 }} />
+      </div>
 
       {/* 슬라이딩 패널 구현 여기에 안되면 Header 에 박자 */}
       <div
@@ -32,19 +34,25 @@ const styles = {
     display: "flex",
     flexDirection: "column",
     height: "100vh",
+    overflow: "hidden",
+    boxSizing: "border-box",
   },
-  slidePanel: {
-    position: "fixed",
-    bottom: 0,
-    left: 0,
-    right: 0,
-    height: "300px",
-    backgroundColor: "#F2E5BF",
-    transition: "transform 0.3s ease-in-out",
-    zIndex: 100,
+  mainContainer: {
+    display: "flex",
+    flexDirection: "column",
+    flexGrow: 1,
   },
-  panelContent: {
-    padding: "200px",
+  textList: {
+    flex: 1,
+    overflowY: "auto",
+  },
+  recorder: {
+    height: "200px",
+    minHeight: "200px",
+    maxHeight: "200px",
+    display: "flex",
+    justifyContent: "center",
+    alignItems: "center",
   },
 };
 
