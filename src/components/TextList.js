@@ -2,7 +2,7 @@ import React, { useState } from "react";
 
 const TextList = () => {
   const [texts, setTexts] = useState([
-    "싸늘하다 가슴에 비수가 날아와 꽂힌다",
+    "싸늘하다 가슴에 비수가 날아와 꽂히냐",
     "하지만 걱정하지 마라 손은 눈보다 빠르니까",
     "아귀한테 밑에서 한 장, 정마담도 밑에서 한 장, 나 한장 아귀한텐 다시 밑에서 한장, 이제 정마담에게 마지막 한 장",
     "동작그만 밑장빼기냐",
@@ -58,7 +58,7 @@ const styles = {
     flex: 1,
     width: "100%",
     // height: "100%",
-    minHeight: "100px", 
+    minHeight: "100px",
     maxHeight: "60vh",
     backgroundColor: "#FAF5E5",
     borderRadius: "15px 15px 0 0",

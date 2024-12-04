@@ -1,7 +1,6 @@
 import React, { useState } from "react";
-import { ReactComponent as SearchIcon } from './img/search.svg';
-import { ReactComponent as SettingsIcon } from './img/settings.svg';
-
+import { ReactComponent as SearchIcon } from "./img/search.svg";
+import { ReactComponent as SettingsIcon } from "./img/settings.svg";
 
 const Header = ({ onOpenModal }) => {
   const [isModalOpen, setIsModalOpen] = useState(false); // 슬라이딩 패널 상태 관리
